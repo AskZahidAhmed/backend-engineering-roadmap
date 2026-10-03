@@ -43,71 +43,6 @@ Learn backend engineering from first principles.
 
 ---
 
-## Optional: Smooth Scrolling
-
-If this roadmap is being rendered as HTML, add the following CSS:
-
-```css
-html {
-  scroll-behavior: smooth;
-}
-```
-
-Then each heading can be targeted automatically using its `id`:
-
-```html
-<h2 id="http-protocol">HTTP Protocol</h2>
-```
-
-And the Table of Contents link:
-
-```html
-<a href="#http-protocol">HTTP Protocol</a>
-```
-
-### Sticky Table of Contents
-
-If you want the Table of Contents to remain visible while reading:
-
-```css
-.table-of-contents {
-  position: sticky;
-  top: 20px;
-  max-height: calc(100vh - 40px);
-  overflow-y: auto;
-}
-```
-
-For a two-column layout:
-
-```css
-.roadmap-container {
-  display: grid;
-  grid-template-columns: 280px 1fr;
-  gap: 40px;
-  align-items: start;
-}
-
-.table-of-contents {
-  position: sticky;
-  top: 20px;
-  max-height: calc(100vh - 40px);
-  overflow-y: auto;
-}
-```
-
-This gives you a **fixed/sticky navigation panel on the left** and the roadmap content on the right. Clicking any topic automatically scrolls to that section.
-
-For a better reading experience, you can also add:
-
-```css
-section {
-  scroll-margin-top: 80px;
-}
-```
-
-This prevents a sticky header from covering the section heading after scrolling.
-
 ## Roadmap Introduction
 
 Backend engineering is a very broad field. When I say **backend engineering**, I mean much more than building a set of CRUD APIs.
@@ -122,7 +57,7 @@ If you decide to learn backend development today, there are thousands of resourc
 * How do all these concepts fit together?
 * How do the different components of a backend system interact?
 
-It can take developers years to build a complete mental model of backend engineering. This is because people often start with a limited scope of training—perhaps through college, a boot camp, or a specific programming course—and gradually build their knowledge through trial and error and by learning from other developers.
+It can take developers years to build a complete mental model of backend engineering. This is because people often start with a limited scope of training - perhaps through college, a boot camp, or a specific programming course - and gradually build their knowledge through trial and error and by learning from other developers.
 
 I faced the same challenge when I started my career as a backend engineer. I had to constantly search for resources, learn from other developers, read books, and study hundreds of open-source codebases to understand how systems are built in the industry. It was a time-consuming process.
 
@@ -363,8 +298,8 @@ We'll also explore cryptographic concepts such as:
 
 We'll examine authorization models such as:
 
-* RBAC — Role-Based Access Control
-* ABAC — Attribute-Based Access Control
+* RBAC  -  Role-Based Access Control
+* ABAC  -  Attribute-Based Access Control
 
 We'll discuss security best practices, including:
 
@@ -513,7 +448,7 @@ The order of middleware matters because each middleware can affect the request o
 
 We'll also see how the `next()` function works and how to **exit middleware early**.
 
-Middleware can short-circuit the request pipeline by handling a request directly—for example, by returning a `401 Unauthorized`, `403 Forbidden`, or `404 Not Found` response without passing control to the next middleware.
+Middleware can short-circuit the request pipeline by handling a request directly - for example, by returning a `401 Unauthorized`, `403 Forbidden`, or `404 Not Found` response without passing control to the next middleware.
 
 ## Security Middleware
 
@@ -853,10 +788,10 @@ We'll examine common caching strategies, including:
 
 We'll also explore cache eviction strategies such as:
 
-* LRU — Least Recently Used
-* LFU — Least Frequently Used
-* TTL — Time to Live
-* FIFO — First In, First Out
+* LRU  -  Least Recently Used
+* LFU  -  Least Frequently Used
+* TTL  -  Time to Live
+* FIFO  -  First In, First Out
 
 We'll discuss cache invalidation strategies, including:
 
@@ -1529,7 +1464,7 @@ We'll also discuss how backend engineers can collaborate effectively with DevOps
 
 And that's the roadmap.
 
-These are the core concepts we'll cover as we build a strong foundation in backend engineering—from understanding how a request travels across a network to designing APIs, working with databases, handling authentication and authorization, building reliable background systems, implementing caching, securing applications, testing code, and deploying and operating services at scale.
+These are the core concepts we'll cover as we build a strong foundation in backend engineering - from understanding how a request travels across a network to designing APIs, working with databases, handling authentication and authorization, building reliable background systems, implementing caching, securing applications, testing code, and deploying and operating services at scale.
 
 The goal is not to memorize a particular framework or programming language.
 
